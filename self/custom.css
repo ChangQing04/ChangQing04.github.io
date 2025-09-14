@@ -1,0 +1,241 @@
+
+@font-face {
+  font-family: 'Maple UI';
+  src: url('/fonts/Maple UI.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Maple UI';
+  src: url('/fonts/Maple UI Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+#nav{
+  height: 60px;
+}
+#nav .menus_item  {
+  position: relative;
+  color: #333 ;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+#nav .menus_item a:hover {
+  color: #0078ff !important;
+}
+#blog-info .site-name  {
+  position: relative;
+  
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+#blog-info .site-name:hover {
+    color: #0078ff !important;
+}
+[data-theme="dark"] #page-header.nav-fixed #nav {
+  background: rgba(71, 71, 71, 0.4);  /* 半透明背景 */
+  backdrop-filter: blur(12px);           /* 毛玻璃 */
+  -webkit-backdrop-filter: blur(12px);   /* Safari 兼容 */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* 阴影提升层次感 */
+}
+[data-theme="dark"] #footer {
+  background: rgba(71, 71, 71, 0.4) !important;  
+  backdrop-filter: blur(12px) !important;          
+  -webkit-backdrop-filter: blur(12px) !important;   
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important; 
+  border-top: 2px solid rgba(71, 71, 71, 0.4) !important;
+}
+
+#page-header.nav-fixed #nav {
+background: linear-gradient(135deg, rgba(255,255,255,0.6) 0%, rgb(108, 194, 255) 100%) ;
+  box-shadow: 0 4px 15px  rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 0;
+  overflow: visible !important;
+  border-bottom: transparent;
+  height: 70px;
+}
+#blog-info{
+  margin-left: 120px; /* 调整左侧间距 */
+  margin-right: auto; /* 自动填充右侧空间 */
+  font-family: 'Maple UI',sans-serif !important;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.menus_items{
+  margin-left: auto;
+  margin-right: 200px;
+  font-family: 'Maple UI',sans-serif !important;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+#region 二次元蓝色美化
+
+
+
+/* 卡片圆角+阴影+淡蓝渐变 */
+.card, .recent-post-item,#page, .aside-content > div, .main-inner, .main .card {
+  border-radius: 16px !important;
+  box-shadow: 0 6px 32px 0 rgba(80,160,255,0.10), 0 1.5px 0 0 #aee2ff inset;
+  background: linear-gradient(135deg, rgba(255,255,255,0.98) 60%, rgba(200,230,255,0.85) 100%) !important;
+  border: none !important;
+  transition: box-shadow 0.3s, transform 0.2s,  !important;
+}
+.card:hover, .recent-post-item:hover {
+  box-shadow: 0 12px 48px 0 rgba(80,160,255,0.18), 0 2px 0 0 #aee2ff inset !important;
+  transform: translateY(-4px) scale(1.03) !important;
+}
+[data-theme="dark"] .card, 
+[data-theme="dark"] .recent-post-item, 
+[data-theme="dark"]  #page,
+[data-theme="dark"] .aside-content > div, 
+[data-theme="dark"] .main-inner, 
+[data-theme="dark"] .main .card {
+  background: rgba(38, 38, 38, 0.671) !important;  
+  backdrop-filter: blur(12px);          
+  -webkit-backdrop-filter: blur(12px);   
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+  transition: box-shadow 0.3s, transform 0.2s,  !important ;
+} 
+[data-theme="dark"] .card:hover,
+[data-theme="dark"] .recent-post-item:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+  transform: translateY(-4px) scale(1.03) !important;
+}
+[data-theme="dark"] .sticky_layout > div {
+  background: rgba(38, 38, 38, 0.671) !important;  
+  backdrop-filter: blur(12px);          
+  -webkit-backdrop-filter: blur(12px);   
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+
+/* 头像发光边框 */
+.avatar-img, .site-author-image, .author-avatar {
+  border-radius: 50% !important;
+  box-shadow: 0 0 0 4px #aee2ff, 0 0 24px 4px #5ebeff55;
+  border: 2px solid #5ebeff;
+  animation: avatar-glow 2s infinite alternate ease-in-out;
+}
+
+@keyframes avatar-glow {
+  0% {
+    box-shadow: 0 0 0 4px #aee2ff, 0 0 24px 4px #5ebeff55;
+  }
+  50% {
+    box-shadow: 0 0 0 8px #aee2ffcc, 0 0 48px 12px #5ebeffaa;
+  }
+  100% {
+    box-shadow: 0 0 0 4px #aee2ff, 0 0 24px 4px #5ebeff55;
+  }
+}
+
+
+
+/* 卡片内容字体柔和 */
+body, .card, .recent-post-item, .aside-content, .main-inner {
+  font-family: 'Maple UI', sans-serif !important;
+  color: #223a5e;
+}
+[data-theme="dark"] body,
+[data-theme="dark"] .card,
+[data-theme="dark"] .recent-post-item,
+[data-theme="dark"] .aside-content,
+[data-theme="dark"] .main-inner {
+  color: #ffffff !important;
+}
+
+
+/* 卡片/内容间距优化 */
+.main-inner, .recent-post-item, .aside-content > div {
+  margin-bottom: 32px !important;
+}
+
+
+
+/* 页脚淡色分割线 */
+#footer {
+  border-top: 2px solid #aee2ff44;
+  background: rgba(82, 197, 255, 0.7) !important;
+  color: #2563a6 !important;
+  font-size: 1.05em;
+}
+
+
+/* 预留流星特效容器 */
+#meteor-canvas {
+  position: fixed;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#endregion
+
+/* 顶部图透明，仅保留模糊特效 */
+#page-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  backdrop-filter: blur(var(--header-blur, 0px));
+  -webkit-backdrop-filter: blur(var(--header-blur-webkit, 0px));
+  transition: backdrop-filter 0.1s linear, -webkit-backdrop-filter 0.1s linear;
+  z-index: 1;
+}
+/* 背景模糊特效伪元素 */
+
+/* 背景模糊特效伪元素 */
+#web_bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  backdrop-filter: blur(var(--bg-blur, 0px));
+  -webkit-backdrop-filter: blur(var(--bg-blur-webkit, 0px));
+  transition: backdrop-filter 0.1s linear, -webkit-backdrop-filter 0.1s linear;
+  z-index: 1;
+}
+
+ /* 主题主内容区去除多余边框和阴影，优化顶部间距 */
+
+#body-wrap, main, .main, #content-inner {
+  border: none !important;
+  box-shadow: none !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  
+}
+  #content-inner {
+    margin-top: 24px !important;
+  }
+/* 伪元素层级和覆盖范围优化 */
+
+#page-header::after, #web_bg::after {
+  inset: 0 !important;
+  z-index: 1 !important;
+}
+/* 首页主标题美化：日系字体、蓝色、阴影 */
+
+#site-title {
+  font-family: 'Maple UI','FangSong' !important; 
+  color: rgba(220, 220, 182, 1) !important; /* 标题颜色 */
+  font-size: 3em !important; /* 字号可自调 */
+  letter-spacing: 2px !important;
+  text-shadow: 2px 2px 8px #fff8, 0 2px 12px #3a8dde44 !important;
+}
+/* 首页副标题美化：日系字体、淡蓝色、阴影 */
+#site-subtitle {
+  font-family: 'Maple UI', sans-serif !important;
+  color: #e0eaff !important; /* 副标题颜色 */
+  font-size: 1.5em !important;
+  letter-spacing: 1px !important;
+  text-shadow: 1px 1px 6px #fff8 !important;
+}
+
