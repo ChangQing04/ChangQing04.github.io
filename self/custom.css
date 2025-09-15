@@ -78,7 +78,7 @@ background: linear-gradient(135deg, rgba(255,255,255,0.6) 0%, rgb(108, 194, 255)
 
 
 /* 卡片圆角+阴影+淡蓝渐变 */
-.card, .recent-post-item,#page, .aside-content > div, .main-inner, .main .card {
+.card, .recent-post-item,#page,#archive,#post, .aside-content > div, .main-inner, .main .card {
   border-radius: 16px !important;
   box-shadow: 0 6px 32px 0 rgba(80,160,255,0.10), 0 1.5px 0 0 #aee2ff inset;
   background: linear-gradient(135deg, rgba(255,255,255,0.98) 60%, rgba(200,230,255,0.85) 100%) !important;
@@ -92,6 +92,8 @@ background: linear-gradient(135deg, rgba(255,255,255,0.6) 0%, rgb(108, 194, 255)
 [data-theme="dark"] .card, 
 [data-theme="dark"] .recent-post-item, 
 [data-theme="dark"]  #page,
+[data-theme="dark"]  #archive,
+[data-theme="dark"]  #post,
 [data-theme="dark"] .aside-content > div, 
 [data-theme="dark"] .main-inner, 
 [data-theme="dark"] .main .card {

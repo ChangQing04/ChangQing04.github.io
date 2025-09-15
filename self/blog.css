@@ -110,6 +110,9 @@
 #body-wrap.post {
   background-color: rgb(194,216,252);
 }
+[data-theme="dark"] #body-wrap.post {
+  background-color: black;
+}
 
 
 .post #page-header::before {
